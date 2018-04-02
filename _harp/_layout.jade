@@ -1,6 +1,49 @@
 doctype
 html
-  head
+  head    
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500")
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous")
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
     link(rel="stylesheet" href="/main.css")
+    script(src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous")
+    script(script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous")
   body
     != yield
+    // Footer
+  footer.page-footer.font-small
+    // Footer Links
+    .container
+      // First row
+      .row
+        // First column
+        .col-md-12.py-5.text-center.icons-padding
+          // Facebook
+          a(href="https://www.facebook.com/danyal.94").fb-ic
+            i.fa.fa-facebook.fa-lg.white-text.mr-md-5.mr-3.fa-2x  
+          // Twitter
+          a(href="https://twitter.com/danyal_s_94").tw-ic
+            i.fa.fa-twitter.fa-lg.white-text.mr-md-5.mr-3.fa-2x  
+          // Google +
+          a(href="https://plus.google.com/+DanyalSoomro").gplus-ic
+            i.fa.fa-google-plus.fa-lg.white-text.mr-md-5.mr-3.fa-2x  
+          // Linkedin
+          a(href="https://www.linkedin.com/in/danyal-soomro/").li-ic
+            i.fa.fa-linkedin.fa-lg.white-text.mr-md-5.mr-3.fa-2x  
+          // Instagram
+          a(href="https://www.instagram.com/danyal.soomro/").ins-ic
+            i.fa.fa-instagram.fa-lg.white-text.mr-md-5.mr-3.fa-2x  
+        // /First column
+      // /First row
+    // /Footer Links
+    // Copyright
+    .container
+      .row
+        .col-lg-12.py-3.text-center
+          | © 2018 Copyright:
+          a(href='danyal-s.github.io')  None really. It's a free world. :)
+          br 
+          cite - Danyal S.
+    // /Copyright
+  // /Footer
+
